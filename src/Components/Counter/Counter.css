@@ -1,0 +1,55 @@
+.main {
+    width: 50%;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.countDiv {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    margin: 0px 5px;
+    padding: 8px;
+    width: 20%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #A9A9A9;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnInc {
+    background-color: blue;
+}
+
+.btnInc:hover {
+    background-color: darkblue;
+}
+
+.btnDec {
+    background-color: red;
+}
+
+.btnDec:hover {
+    background-color: darkred;
+}
+
+.btnRes {
+    background-color: lightsalmon;
+}
+
+.btnRes:hover {
+    background-color: darkorange;
+}
