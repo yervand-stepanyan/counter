@@ -46,6 +46,15 @@ button {
     background-color: darkred;
 }
 
+.btnDecDisabled {
+    background-color: gray;
+}
+
+.btnDecDisabled:hover {
+    cursor: not-allowed;
+    background-color: gray;
+}
+
 .btnRes {
     background-color: lightsalmon;
 }

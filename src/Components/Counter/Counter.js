@@ -32,7 +32,11 @@ class Counter extends React.Component {
         <div className="countDiv">Count: {this.state.count}</div>
         <div className="buttonsDiv">
           <button className="btnInc" onClick={this.handleAddCount}>+</button>
-          <button className="btnDec" onClick={this.handleSubtractCount}>-</button>
+          <button className={this.state.count === 0 ? "btnDecDisabled" : "btnDec"}
+                  onClick={this.handleSubtractCount}
+                  disabled={this.state.count <= 0}>
+            -
+          </button>
           <button className="btnRes" onClick={this.handleResetToZero}>Reset</button>
         </div>
       </div>
