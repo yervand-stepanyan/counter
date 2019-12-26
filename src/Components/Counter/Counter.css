@@ -46,11 +46,11 @@ button {
     background-color: darkred;
 }
 
-.btnDecDisabled {
+.btnDisabled {
     background-color: gray;
 }
 
-.btnDecDisabled:hover {
+.btnDisabled:hover {
     cursor: not-allowed;
     background-color: gray;
 }
