@@ -30,6 +30,8 @@ class Counter extends React.Component {
 
   render() {
     localStorage.setItem("count", JSON.stringify(this.state.count));
+    // const classNameForBtnDec = `{this.state.count === 0 ? "btnDisabled" : "btnDec"} btn`;
+    // const classNameForBtnRes = `{this.state.count === 0 ? "btnDisabled" : "btnRes"} btn`;
 
     return (
       <div className="main">
