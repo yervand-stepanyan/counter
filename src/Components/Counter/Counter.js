@@ -13,32 +13,36 @@ class Counter extends React.Component {
   }
 
   handleAddCount = () => {
-    this.setState(state => ({
-      count: state.count + 1
-    }));
+    const count = this.state.count + 1;
+
+    this.setState({count});
+
+    localStorage.setItem("count", JSON.stringify(count));
   };
 
   handleSubtractCount = () => {
-    this.setState(state => ({
-      count: state.count - 1
-    }));
+    const count = this.state.count - 1;
+
+    this.setState({count});
+
+    localStorage.setItem("count", JSON.stringify(count));
   };
 
   handleResetToZero = () => {
-    this.setState({count: 0});
+    const count = 0;
+
+    this.setState({count});
+
+    localStorage.setItem("count", JSON.stringify(count));
   };
 
   render() {
-    localStorage.setItem("count", JSON.stringify(this.state.count));
-    // const classNameForBtnDec = `{this.state.count === 0 ? "btnDisabled" : "btnDec"} btn`;
-    // const classNameForBtnRes = `{this.state.count === 0 ? "btnDisabled" : "btnRes"} btn`;
-
     return (
       <div className="main">
         <div className="countDiv">Count: {this.state.count}</div>
         <div className="buttonsDiv">
           <div className="button">
-            <button className="btnInc btn" onClick={this.handleAddCount}>+</button>
+            <button className="btnInc" onClick={this.handleAddCount}>+</button>
           </div>
           <div className="button">
             <button className={this.state.count === 0 ? "btnDisabled" : "btnDec"}
