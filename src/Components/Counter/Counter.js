@@ -37,9 +37,6 @@ class Counter extends React.Component {
   };
 
   render() {
-    // const classNameForBtnDec = `{this.state.count === 0 ? "btnDisabled" : "btnDec"} btn`;
-    // const classNameForBtnRes = `{this.state.count === 0 ? "btnDisabled" : "btnRes"} btn`;
-
     return (
       <div className="main">
         <div className="countDiv">Count: {this.state.count}</div>
